@@ -5,7 +5,7 @@ const iteratableFunctionInvocation =
   (...args) =>
     fns.forEach((fn) => fn && fn(...args));
 
-export default function useExpanded() {
+export default function useAccordion() {
   const [expanded, setExpanded] = useState(false);
   const toggle = useCallback(
     () => setExpanded((prevExpanded) => !prevExpanded),
