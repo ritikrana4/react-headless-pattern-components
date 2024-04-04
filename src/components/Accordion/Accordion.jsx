@@ -25,6 +25,8 @@ export default function Accordion() {
         <button
           style={buttonStyle}
           {...getTogglerProps({
+            'data-testid':'toggle-button', 
+            'aria-label':'accordion',
             onClick: () => {
               alert("Do you want to continue?");
             },
